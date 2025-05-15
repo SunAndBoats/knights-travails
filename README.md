@@ -1,13 +1,28 @@
-## 🚀 Primeros pasos
+# 🐴 Knights Travails
 
-Para iniciar un nuevo proyecto con esta plantilla
+Este proyecto resuelve el problema de encontrar el camino más corto que un caballo puede recorrer en un tablero de ajedrez de 8x8 desde una posición de inicio hasta una de destino.
 
-npx degit SunAndBoats/template mi-nuevo-proyecto
-cd mi-nuevo-proyecto
-npm install
-npm run dev
+## 🚀 Tecnologías
 
-Renombra el proyecto en package.json ("name": "mi-nuevo-proyecto")
-Cambia el título en src/template.html
+- JavaScript (ES6+)
+- Webpack
+- Estructuras de datos: Grafos implícitos
+- Algoritmo utilizado: Búsqueda en Anchura (BFS)
 
-Escribe tu app en src/index.js.
+## 📂 Estructura
+
+src/
+modules/
+knights/
+knightMoves.js
+knightMoves.test.js
+index.js
+
+## 🔧 Uso
+
+```js
+import knightMoves from './modules/knights/knightMoves';
+
+knightMoves([0, 0], [7, 7]);
+// Salida esperada: Camino más corto con movimientos válidos del caballo
+```
